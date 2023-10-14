@@ -30,7 +30,9 @@ float: right;
 
 .user-card {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -42,12 +44,13 @@ float: right;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
 }
 
 .action-buttons {
-  margin-left: auto;
-  padding: 2;
+  padding: 20px;
+}
+.action-buttons .ant-btn {
+  margin-bottom: 2px; /* Adjust this value as per your needs */
 }
 
 .user-card {
@@ -80,4 +83,13 @@ float: right;
 }
 .leaderboard {
   color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* this div contains a bunch of user-cards */
+.leaderboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
