@@ -226,10 +226,10 @@ const HomePage: React.FC<{
         name: selectedName!,
         code: randomNumber!,
         score: 0,
-        weeks: [{ week: currentWeek, count: 2 }]
+        weeks: [{ week: currentWeek, count: 5 }]
       });
     } else {
-      updatedUsersData[userIndex].weeks.push({ week: currentWeek, count: 2 });
+      updatedUsersData[userIndex].weeks.push({ week: currentWeek, count: 5 });
     }
 
     setUsersData(updatedUsersData);
